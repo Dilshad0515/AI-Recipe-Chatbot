@@ -1,0 +1,289 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===============================
+   PAGE WRAPPER (ONLY BACKGROUND)
+================================ */
+.app-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 16px;
+}
+
+/* ===============================
+   CHAT CONTAINER
+================================ */
+.chat-container {
+  width: 100%;
+  max-width: 420px; /* mobile first */
+  height: 90vh;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .chat-container {
+    max-width: 720px;
+  }
+}
+
+/* Mobile fullscreen */
+@media (max-width: 600px) {
+  .chat-container {
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* ===============================
+   HEADER
+================================ */
+.chat-header {
+  background: linear-gradient(135deg, #ff7a18, #ff9f5a);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ===============================
+   MESSAGE AREA
+================================ */
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   MESSAGE BUBBLES
+================================ */
+.message {
+  max-width: 80%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  animation: slideUp 0.3s ease forwards;
+}
+
+/* USER */
+.message.user {
+  background: #ff7a18;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* BOT */
+.message.bot {
+  background: #f2f2f2;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* ===============================
+   DISH BUTTONS
+================================ */
+.dish-button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: #fff5ee;
+  border: 1px solid #ff7a18;
+  border-radius: 20px;
+  color: #ff7a18;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dish-button:hover {
+  background: #ff7a18;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* ===============================
+   RECIPE CARD
+================================ */
+.recipe-card {
+  margin-top: 10px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h4 {
+  margin: 8px 0;
+  color: #ff7a18;
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  padding-left: 18px;
+}
+
+/* ===============================
+   INPUT AREA
+================================ */
+.chat-input {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #eee;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.chat-input input:focus {
+  border-color: #ff7a18;
+}
+
+.chat-input button {
+  background: #ff7a18;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.chat-input button:hover {
+  background: #ff5f00;
+}
+
+/* ===============================
+   TYPING INDICATOR
+================================ */
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+}
+
+.typing span {
+  width: 8px;
+  height: 8px;
+  background: #aaa;
+  border-radius: 50%;
+  animation: typing 1.2s infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+/* ===============================
+   DARK MODE
+================================ */
+body.dark {
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+}
+
+body.dark .chat-container {
+  background: #1e1e1e;
+}
+
+body.dark .chat-header {
+  background: linear-gradient(135deg, #333, #555);
+}
+
+body.dark .message.bot {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+body.dark .chat-input {
+  border-top: 1px solid #333;
+}
+
+body.dark input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark .recipe-card {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+.dark-toggle {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
