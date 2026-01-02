@@ -87,35 +87,39 @@ AI-Recipe-Chatbot
 │
 ├── Dockerfile
 └── README.md
+```
+
+---
 
 ## ▶️ Run the Project Locally
 
-### ✅ Prerequisites
+###  Prerequisites
 
 - ☕ **Java 17**
 - 🧰 **Maven**
 - 🌐 **Node.js (v18+)**
-- 🐳 **Docker** (optional)
+- 🐳 **Docker**
 
----
 
 ### 🖥️ Backend Setup
 
 ```bash
 cd backend
 mvn spring-boot:run
-
+```
 ### 🌐 Frontend Setup
 
 ```bash
 cd frontend
 npm install
 npm run dev
+```
+
+---
 
 ## 👨‍💻 Author
 
-**Dilshad Shaik**  
-Backend / Java Developer  
+**Dilshad Shaik**   
 
 🔗 **GitHub:** https://github.com/Dilshad0515  
 🔗 **LinkedIn:** https://www.linkedin.com/in/dilshad-shaik-8848b423a/
