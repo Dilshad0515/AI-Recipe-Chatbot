@@ -9,12 +9,12 @@ The application follows a chat-based interaction where users can naturally commu
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:**  
+ **Live Application:**  
 https://ai-recipe-chatbot.onrender.com
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The application works in a conversational manner:
 
@@ -28,7 +28,7 @@ The **backend** handles AI communication and business logic, while the **fronten
 
 ---
 
-## 🧠 Features
+##  Features
 
 - Ingredient-based recipe suggestions  
 - AI-powered dish recommendations using **Groq API**  
@@ -39,7 +39,7 @@ The **backend** handles AI communication and business logic, while the **fronten
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### 🚀 Backend
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
@@ -92,7 +92,7 @@ AI-Recipe-Chatbot
 
 ## ▶️ Run the Project Locally
 
-### ✅ Prerequisites
+###  Prerequisites
 
 - ☕ **Java 17**
 - 🧰 **Maven**
