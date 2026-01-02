@@ -1,114 +1,89 @@
 # 🍳 AI Recipe Chatbot
 
-AI Recipe Chatbot is a full-stack web application that suggests recipes based on the ingredients provided by the user.  
-It uses an AI service to generate dish suggestions and full cooking recipes through a conversational flow.
+AI Recipe Chatbot is a **full-stack web application** that suggests recipes based on ingredients provided by the user.  
+It uses an **AI-powered conversational flow** to recommend dishes and generate complete cooking recipes.
+
+The application follows a chat-based interaction where users can naturally communicate with the system to get recipe ideas and step-by-step cooking instructions.
 
 ---
 
-## 📌 Project Description
+## 🚀 Live Demo
 
-The application works in a chat-based format:
+🔗 **Live Application:**  
+https://ai-recipe-chatbot.onrender.com
+
+---
+
+## 📌 Project Overview
+
+The application works in a conversational manner:
 
 1. User enters available ingredients  
-2. The system suggests possible dishes  
+2. AI suggests possible dishes  
 3. User selects a dish  
-4. The system asks for confirmation  
-5. On confirmation, a complete recipe with ingredients and steps is returned  
+4. System asks for confirmation  
+5. On confirmation, a **complete recipe** (ingredients + steps) is generated  
 
-The backend handles all AI communication and business logic, while the frontend provides an interactive chat interface.
+The **backend** handles AI communication and business logic, while the **frontend** provides an interactive chat-style UI.
 
 ---
 
 ## 🧠 Features
 
 - Ingredient-based recipe suggestions  
-- AI-powered responses using Groq API  
+- AI-powered dish recommendations using **Groq API**  
 - Step-by-step cooking instructions  
-- Chat-style user interaction  
-- Light and Dark mode UI  
-- Single application deployment (frontend served by backend)
+- Chat-style interactive interface  
+- Light & Dark mode support  
+- Single deployment (frontend served by backend)  
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-### Backend
-- Java 17  
-- Spring Boot  
-- Spring MVC  
-- Spring Data JPA  
-- H2 In-Memory Database  
-- REST APIs  
-- Environment variable based configuration  
+### 🚀 Backend
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green?logo=springboot)
+![Spring MVC](https://img.shields.io/badge/Spring-MVC-brightgreen)
+![Spring Data JPA](https://img.shields.io/badge/Spring-Data%20JPA-blue)
+![H2](https://img.shields.io/badge/H2-Database-lightgrey)
 
-### Frontend
-- React (Vite)  
-- HTML  
-- CSS  
-- JavaScript  
+### 🌐 Frontend
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Build-purple?logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5)
+![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3)
 
-### Deployment & DevOps
-- Docker  
-- Render (Cloud Hosting)  
+### ☁️ DevOps & Deployment
+![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
+![Render](https://img.shields.io/badge/Render-Cloud-black?logo=render)
+![Git](https://img.shields.io/badge/Git-Version%20Control-red?logo=git)
 
 ---
 
 ## 🏗️ Project Structure
 
+```text
 AI-Recipe-Chatbot
 │
 ├── backend
-│ ├── Spring Boot application
-│ ├── REST APIs
-│ └── Serves frontend static files
+│   ├── src/main/java
+│   │   └── Spring Boot application source
+│   ├── src/main/resources
+│   │   ├── application.yml
+│   │   └── static/        # Frontend build files
+│   ├── pom.xml
+│   └── Dockerfile
 │
 ├── frontend
-│ ├── React (Vite)
-│ └── Build output copied into backend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   └── styles
+│   ├── public
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── Dockerfile
 └── README.md
-
-
----
-
-## ▶️ Run the Project Locally
-
-### Backend
-
-```bash
-cd backend
-mvn spring-boot:run
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-
-Deployment
-
-The application is deployed on Render using Docker.
-
-Live URL:
-
-https://ai-recipe-chatbot.onrender.com
-
-Deployment
-
-The application is deployed on Render using Docker.
-
-Live URL:
-
-https://ai-recipe-chatbot.onrender.com
-
-👨‍💻 Author
-
-Dilshad Shaik
-
-Backend / Java Developer
-
-GitHub: https://github.com/Dilshad0515
-
-LinkedIn: https://www.linkedin.com/in/dilshad-shaik-8848b423a/
