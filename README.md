@@ -9,12 +9,12 @@ The application follows a chat-based interaction where users can naturally commu
 
 ## 🚀 Live Demo
 
- **Live Application:**  
-https://ai-recipe-chatbot.onrender.com
+**Live Application:**  
+🔗 https://ai-recipe-chatbot.onrender.com
 
 ---
 
-##  Project Overview
+## 📌 Project Overview
 
 The application works in a conversational manner:
 
@@ -28,7 +28,7 @@ The **backend** handles AI communication and business logic, while the **fronten
 
 ---
 
-##  Features
+## ✨ Features
 
 - Ingredient-based recipe suggestions  
 - AI-powered dish recommendations using **Groq API**  
@@ -39,7 +39,7 @@ The **backend** handles AI communication and business logic, while the **fronten
 
 ---
 
-##  Tech Stack
+## 🛠️ Tech Stack
 
 ### 🚀 Backend
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
@@ -88,11 +88,9 @@ AI-Recipe-Chatbot
 ├── Dockerfile
 └── README.md
 
----
-
 ## ▶️ Run the Project Locally
 
-###  Prerequisites
+### ✅ Prerequisites
 
 - ☕ **Java 17**
 - 🧰 **Maven**
@@ -107,20 +105,23 @@ AI-Recipe-Chatbot
 cd backend
 mvn spring-boot:run
 
-🌐 Frontend Setup
+### 🌐 Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Dilshad Shaik
-Backend / Java Developer
+**Dilshad Shaik**  
+Backend / Java Developer  
 
-🔗 GitHub: https://github.com/Dilshad0515
+🔗 **GitHub:** https://github.com/Dilshad0515  
+🔗 **LinkedIn:** https://www.linkedin.com/in/dilshad-shaik-8848b423a/
 
-🔗 LinkedIn: https://www.linkedin.com/in/dilshad-shaik-8848b423a/
+---
 
-⭐ Support
+## ⭐ Support
 
 If you like this project, please ⭐ the repository and feel free to contribute!
